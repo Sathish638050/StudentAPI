@@ -99,14 +99,13 @@ namespace StudentApi.Controllers
         public async Task<IActionResult> UpdateUser(int id,UserAccount s)
         {
             _log4net.Info(id + "user are update detail");
-            UserAccount p =  await US.Update(id);
+            UserAccount p = db.UserAccounts.Find(id);
             p.Email = s.Email;
             p.FirstName = s.FirstName;
             p.LastName = s.LastName;
-            p.Role = s.Role;
             p.Phone = s.Phone;
             //db.Entry(s).State = EntityState.Modified;
-            await db.SaveChangesAsync();
+            db.SaveChanges();
             return Ok();
         }
         [HttpPut]
@@ -114,15 +113,11 @@ namespace StudentApi.Controllers
         public async Task<IActionResult> UpdatePic(int id, UserAccount s)
         {
             _log4net.Info(id + " was edit profile picture");
-            UserAccount pro = await US.Update(id);
-            if (pro != null)
-            {
-                pro.UserImage = s.UserImage;
-                
-            }
-            //db.Entry(s).State = EntityState.Modified;
-            await db.SaveChangesAsync();
+            UserAccount u = db.UserAccounts.Find(id);
+            u.UserImage = s.UserImage;
+            db.SaveChanges();
             return Ok();
+            
         }
         [HttpGet]
         [Route("GetStudentByID")]

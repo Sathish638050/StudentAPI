@@ -7850,11 +7850,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Kanini\\E-Learn\\StudentApi\\StudentApi.csproj",
+      "projectUniqueName": "D:\\Kanini\\ELearnProject\\E-Learn\\StudentApi\\StudentApi.csproj",
       "projectName": "StudentApi",
-      "projectPath": "D:\\Kanini\\E-Learn\\StudentApi\\StudentApi.csproj",
+      "projectPath": "D:\\Kanini\\ELearnProject\\E-Learn\\StudentApi\\StudentApi.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\Kanini\\E-Learn\\StudentApi\\obj\\",
+      "outputPath": "D:\\Kanini\\ELearnProject\\E-Learn\\StudentApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
